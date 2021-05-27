@@ -19,9 +19,33 @@ Projeto feito usando Angular, front que consome API para executar acções CRUD,
 <h5>Delete<h5/>
 <img src= https://lh3.googleusercontent.com/pw/ACtC-3el9nOCrqTs30OCPC5Ig6mbxhwrBHu2VColslpWOkTau6vF-Zyf3gN4QCqbwCPAOgRhy4s5mFCTsw5CHKi3QauCAdtKGUS_qSujOd7k2J9H9WNmiq14YcZvUkyN-MX5-n3xCWbbVhKAUpEm46evk_ko=w1280-h582-no?authuser=0 width="750">
 
+  
+  
+
+  
+## Rodando o FrontEnd (Client)
+  
+ #Acesse a pasta do projeto no terminal/cmd
+  $ cd frontend
+  
+  #execute a aplicação
+  $ ng serve
+ #Abra seu browser http://localhost:4200/
+ 
+  
 ## Backend
 
 Utilizei um db.json local para poder testar o CRUD da aplicação.
+  
+ #Rodando BackEnd (servidor)
+  
+ #Acesse a pasta do projeto no terminal/cmd
+  $ cd backend
+  
+ #Execute a aplicação
+  $ npm start
+  
+#O servidor iniciará na porta 3001 <http://localhost:3001/products>
 
 ## Components criados
 

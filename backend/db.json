@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "MacBook Pro",
+      "price": "8000"
+    },
+    {
+      "id": 3,
+      "name": "Samsung S20",
+      "price": "3999"
+    },
+    {
+      "name": "Headset",
+      "price": "199.99",
+      "id": 4
+    },
+    {
+      "name": "Carregador portátil",
+      "price": "89.90",
+      "id": 5
+    },
+    {
+      "name": "IphoneSE",
+      "price": "1900",
+      "id": 9
+    },
+    {
+      "name": "PenDrive 16gb Sandisk",
+      "price": "32.00",
+      "id": 10
+    },
+    {
+      "name": "Iphone XS",
+      "price": "4980",
+      "id": 11
+    }
+  ]
+}

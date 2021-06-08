@@ -3,7 +3,7 @@
 
 # Frontend
 
-Projeto feito usando Angular, front que consome API para executar acções CRUD, como proposto pelo Desafio de Desenvolviento.
+Projeto feito usando Angular, front que consome API para executar ações CRUD.
 <h5>Página Inicial<h5/> 
 <img src= "https://lh3.googleusercontent.com/pw/ACtC-3dxBDha8MfxJvSe8Y1EkBoeodosf0-fVpNrOolUla4W2EYXLWJU0wGG79Bemj4N0HzFvF7k1eXazyzf_Rv5InCGfha77u2uKYsz7S0EEbDo5X5uDmkRoesnl-wzDBlbO-reVGzelkVwZ8VRIiTz20sg=w1280-h582-no?authuser=0" width="750">
 

@@ -14,7 +14,7 @@ export class ProductUpdateComponent implements OnInit {
     product: Product = {
     name: '',
     price: null
-  } 
+  }
 
 
   constructor(
@@ -25,17 +25,18 @@ export class ProductUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
-    this.productService.readById(id!).subscribe(product =>{ //usei ! por conta de erro que 
-    this.product = product                                  //dava por conta do StrictNullChecks
+    this.productService.readById(id!).subscribe(product =>{
+    this.product = product
     });
   }
 
   updateProduct(): void {
-    this.productService.update(this.product).subscribe(() => {
+    const _id = this.route.snapshot.paramMap.get('id')
+    this.productService.update(this.product, _id).subscribe(() => {
       this.productService.showMessage('Produto Atualizado')
       this.router.navigate(['/products'])
     });
-    
+
   }
   cancel(): void {
     this.router.navigate(['/products'])

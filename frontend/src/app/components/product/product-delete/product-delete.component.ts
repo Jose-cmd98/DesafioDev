@@ -13,7 +13,7 @@ export class ProductDeleteComponent implements OnInit {
    product: Product = {
     name: '',
     price: null
-  } 
+  }
 
 
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) { }
@@ -25,7 +25,8 @@ export class ProductDeleteComponent implements OnInit {
     })
   }
   deleteProduct(): void {
-    this.productService.delete(this.product.id!).subscribe(() => {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.productService.delete(id).subscribe(() => {
       this.productService.showMessage('Produto Excluido');
       this.router.navigate(['/products']);
     })

@@ -9,7 +9,7 @@ import {Product } from './product.model';
 })
 export class ProductService {
 
-  private baseUrl: string="http://localhost:3001/products";
+  private baseUrl: string="http://localhost:3000/products";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
@@ -26,7 +26,7 @@ export class ProductService {
   }
 
   read(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.baseUrl) 
+    return this.http.get<Product[]>(this.baseUrl)
   }
 
   readById(id: string): Observable<Product> {
@@ -34,12 +34,13 @@ export class ProductService {
     return this.http.get<Product>(url)
   }
 
-  update(product: Product): Observable<Product> {
-    const url = `${this.baseUrl}/${product.id}` //busca no backend dos produtos atualizado
-    return this.http.put<Product>(url, product)
+  update(product: any, id: any): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`
+    const body = {...product, id}
+    return this.http.put<Product>(url, body)
   }
 
-  delete(id: number): Observable<Product> {
+  delete(id: any): Observable<Product> {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Product>(url)
   }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './../product.service';
-import { Product } from './../product.model'; 
+import { Product } from './../product.model';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class ProductReadComponent implements OnInit {
   products: Product[] = [] //recebe array de produtos
   displayedColumns = ['id', 'name', 'price', 'action'] //from columns
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.productService.read().subscribe(products => {
@@ -21,5 +22,7 @@ export class ProductReadComponent implements OnInit {
       console.log(products)
     })
   }
+
+
 
 }
